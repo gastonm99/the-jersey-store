@@ -1,0 +1,646 @@
+@font-face {
+    font-family: titulo;
+    src: url(./assets/fonts/love_heist/LoveHeistDemoRegular.ttf);
+}
+
+@font-face {
+    font-family: basketball;
+    src: url(./assets/fonts/Basketball.otf);
+}
+
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.header{
+    background-color: #0f172a6b;
+    padding: 20px 20px;
+
+}
+
+
+.header__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.header__container h1 a{
+    color: rgb(216, 159, 12);
+    font-family: titulo;
+    font-size: 50px;
+    /* margin-left: 125px; */
+    font-weight: 600;
+    text-shadow: #FC0 1px 0 5px;    
+}
+
+.header__container h1:hover{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.header__container-navbar{
+    display: none;
+}
+
+.header__container-navbar li{
+    margin: 0 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.header__container-navbar li a{
+    color: #e2e8f0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header__container-navbar li a:hover{
+    border-bottom: 2px solid #333;
+    color: rgb(216, 159, 12);
+
+}
+
+.header__container-navbar-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ------------------------------ */
+h2{
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+}
+
+.section-index{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cajon-index{
+    width: 350px;
+    margin-left: 35px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 38px 14px rgba(0,0,0,0.3);
+    margin: 35px 20px;
+    background-color: #66666600;
+}
+
+
+.quienes-somos{
+    color: white;
+    font-size: 18px;
+    
+}
+
+/* INDEX mas vendido */
+/* .titulo-mv{
+    display: inline-block;
+} */
+
+.mas-vendido{
+    display: flex;
+    margin: 5px;
+    columns: 100px;
+    
+    width: 550px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px 10px 10px 10px;
+    box-shadow: 0px 0px 38px 14px rgba(0, 0, 0, 0.3);
+    margin: 35px 20px;
+    background-color: #66666600;
+    position: relative;
+    
+}
+
+/* .h2-mv{
+    position: absolute;
+    text-align: center;
+    margin-left: 35%;
+} */
+.card-mv {
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    margin: 20px;
+    transition: transform 0.2s ease-in-out; /* transición suave al hacer hover */
+  }
+
+.card-mv:hover {
+  transform: scale(1.1); /* agranda la tarjeta al 110% */
+  box-shadow: 2px 2px 20px  rgba(0, 0, 0, 0.3);
+}
+
+
+.card-mv img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  /* VER SI SE PUEDE PONER SOMBRA A LA FOTO */
+}
+
+.card-mv h3 {
+  font-family: basketball;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: whitesmoke;
+  align-items: center;
+  text-align: center;
+}
+
+.card-mv p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-mv span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-mv button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-mv button:hover {
+  background-color: #0062cc;
+}
+
+/* .card-h1-oneline{
+    gap: auto;
+} */
+
+/* Backgrounds */
+/* Index */
+.bg-index{
+    /* background-image: url(./assets/img/553032-kevin-durant.jpg); */
+    background-color: #5f9ea0;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Iniciar sesion y Registro */
+.bg-sesion{
+    background-image: url(./assets/img/court\ basket.jpg);
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sesion-card{
+    width: 300px;
+    height: 200px;
+    background-color: #3333337a;
+    margin-top: 30px;
+    align-items: 50%;
+    margin-left: 37%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.425);
+}
+
+.session-form label input{
+    width: 80%;
+    margin: 10px;
+    background-color: rgba(240, 248, 255, 0.217);
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.sesion-button a button{
+    border-radius: 10px;
+    background-color: rgba(61, 61, 254, 0.779);
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+}
+
+.sesion-button a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/*  -------    card Registrarse     ----------- */
+.registrarse-card{
+    height: 460px;
+    width: 350px;
+    margin-left: 35%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.425);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #3333337a;
+
+}
+
+.registrarse-form label input{
+    margin: 10px;
+    padding: 5px;
+    width: 90%;
+    background-color: #33333371;
+    border-radius: 10px;
+}
+
+.registrarse-form label select{
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    background-color: #33333371;
+}
+
+.registrarse-terminos{
+    display: inline-block;
+    margin: 15px;
+}
+
+.registrarse-button a button{
+    border-radius: 10px;
+    background-color: rgba(61, 61, 254, 0.779);
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+}
+
+.registrarse-button a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+.titulo-contacto{
+    color: grey;
+}
+
+.bg-contacto{
+    background-image: url(./assets/img/aro\ basket\ black\ white.jpg);
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+.h2-contact{
+    padding-top: 15px;
+    color: #686868;
+    font-size: 30px;
+    
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    gap: 35px;
+    
+}
+
+.contact-div{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: start; 
+    max-width: 500px;
+    border: 1px solid #ddd;
+    background-color: #dfdfdfd7;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.contact-div a{
+    /* display: flex;     */
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.child-datos{
+    display: grid;
+    vertical-align: middle;
+    padding-right: 20px ;   
+} 
+
+.child-datos h6{
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contact-div a img{
+    height: 43px;
+    width: 43px;
+    padding: 10px;
+        
+}
+
+.email-contact{
+    padding-bottom: 20px;
+}
+
+.child-sobre-nosotros {
+    background-color: #dfdfdfd7;
+}
+
+.h2-sobre-nosotros{
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.child-sobre-nosotros p{
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+.location {
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.368);
+    margin-right: 5px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+      
+}
+
+.h2-ubicacion{
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 30px;
+    padding: 20px 0px 20px 20%;
+}
+
+
+
+/* SHOP */
+
+.bg-shop{
+    /* background-image: url(./assets/img/court\ basket.jpg); */
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #4e8182;
+}
+
+
+.h2-shop{
+    margin-top: 5px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(216, 159, 12);
+    font-family: basketball;
+}
+
+.section-shop{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-evenly;
+    margin: 20px;
+
+    /* margin-left: 40px; */
+}
+.card {
+    width: 190px;
+    border: 2px solid rgb(216, 159, 12);
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.3); */
+    box-shadow: 0px 0px 18px 15px rgba(21, 21, 21, 0.377);
+    margin: 20px;
+    transition: transform 0.2s ease-in-out; /* transición suave al hacer hover */
+  }
+
+.card:hover {
+  transform: scale(1.1); /* agranda la tarjeta al 110% */
+  box-shadow: 2px 2px 20px rgba(216, 158, 12, 0.6);
+  background-color: rgba(100, 148, 237, 0.183);
+}
+
+
+.card img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 1.6em;
+  font-weight: 200;
+  margin: 10px 0;
+  color: whitesmoke;
+  text-align: center;
+  font-family: basketball;
+}
+.card h4{
+    font-size: 1.0em;
+    color: #404040;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card p {
+  font-size: 0.9em;
+  color: #404040;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #0062cc;
+}
+
+/* FOOTER */
+
+.container__footer{
+    /* max-width: 1200px;  */
+    /* width: 100%; */
+
+
+    background-color: #003975ab;
+    margin-top: 20px;
+    padding: 10px 20px;
+
+}
+
+.container__footer-contacto{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 15px;
+    align-items: center;
+}
+
+.container__footer-contacto-a{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color: black;    
+}
+
+.container__footer-contacto-img{
+    height: 43px;
+    width: 43px;
+    margin-right: 10px;
+
+
+}
+
+/* MEDIA QUERIE */
+@media (min-width: 320px){
+    main{
+        align-items: center;
+    }
+
+
+    /* INDEX */
+
+    .section-index{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cajon-index{
+        width: 80%;
+
+    }
+
+    .quienes-somos{
+        font-size: small;
+    }
+
+    .mas-vendido{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 200px;
+        margin: auto;
+    }
+}
+
+
+
+@media (min-width: 768px){
+   
+    .header__container-navbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .header__container-navbar li:last-child{
+        border: dashed #FC0 2px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .header__container-navbar-mobile{
+        display: none;
+    }
+
+
+    /* INDEX */
+
+    .section-index{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .cajon-index{
+        max-width: 300px;
+    }
+    .mas-vendido{
+        display: flex;
+        margin: 5px;
+        columns: 100px;
+        align-content: center;
+        max-width: fit-content;
+    }
+    
+    /* .h2-mv{
+        text-align: center;
+        text-justify: top;
+    } */
+}
