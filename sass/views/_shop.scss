@@ -1,0 +1,252 @@
+/* SHOP */
+
+// ---------------------------------------------------------------
+// .card-shop{
+//     background-image: radial-gradient(circle at top, #8ac9c975 50%, #584d3f4b 80%);
+//     background-size: cover;
+//     max-width: 100%;
+//     max-height: 100%;
+// }
+// ------------------------------------------------------------
+// 320px
+@media (min-width: $bpSmall){
+     .bg-shop{
+        /* background-image: url(./assets/img/court\ basket.jpg); */
+        background-size: cover;
+        max-width: 100%;
+        max-height: 100%;
+        background-color: #4e8182;
+    }
+
+
+    .h2-shop{
+        margin-top: 5px;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(216, 159, 12);
+        font-family: basketball;
+    }
+
+    .section-shop{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-evenly;
+        margin: 20px;
+        align-items: center;
+        justify-items: center;
+
+        /* margin-left: 40px; */
+    }
+    .card-shop {
+        width: 190px;
+        border: 2px solid rgb(216, 159, 12);
+        border-radius: 5px;
+        padding: 10px;
+        /* box-shadow: 0 0 5px rgba(0,0,0,0.3); */
+        box-shadow: 0px 0px 18px 15px rgba(21, 21, 21, 0.377);
+        margin: 20px;
+        transition: transform 0.2s ease-in-out; /* transición suave al hacer hover */
+
+        &:hover{
+            transform: scale(1.1); /* agranda la tarjeta al 110% */
+            box-shadow: 2px 2px 20px rgba(216, 158, 12, 0.6);
+            background-color: rgba(100, 148, 237, 0.183);
+        }
+
+        & img{
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        & h3 {
+            font-size: 1.6em;
+            font-weight: 200;
+            margin: 10px 0;
+            color: whitesmoke;
+            text-shadow: #FC0 1px 0 15px;
+            text-align: center;
+            font-family: basketball;
+        }
+
+        & h4{
+            font-size: 1.0em;
+            color: #404040;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        & p{
+            font-size: 0.9em;
+            color: #404040;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        & span{
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+            // font-family: marker;
+            font-family: contacto;
+        }
+
+        & button {
+            display: block;
+            width: 100%;
+            background-color:#2c9e23;
+            color: #fff;
+            border: solid 1px rgb(216, 159, 12);
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover{
+                background-color: #57ab5c;
+            }
+        }
+    }
+}
+
+// 578px
+@media (min-width: $bpMedium){
+    .section-shop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-evenly;
+        margin: 20px;
+        align-items: center;
+        justify-items: center;
+        /* margin-left: 40px; */
+    }
+}
+
+// 920px
+@media (min-width: $bpXLarge){
+    .h2-shop{
+        display: block;
+        text-align: center;
+        text-justify: top;
+        color: rgb(216, 159, 12);
+        font-family: basketball;
+        border-bottom: solid 2px #bdbdbd8a;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        font-size: 40px;
+        box-shadow: 0px 22px 18px 0px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        margin: 30px 30px 30px 20px;
+    }
+
+    .bg-shop{
+        /* background-image: url(./assets/img/court\ basket.jpg); */
+        background-size: cover;
+        max-width: 100%;
+        max-height: 100%;
+        background-color: #4e8182;
+    }
+
+
+    .h2-shop{
+        margin-top: 5px;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(216, 159, 12);
+        font-family: basketball;
+    }
+
+    .section-shop{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-evenly;
+        margin: 20px;
+
+        /* margin-left: 40px; */
+    }
+    .card-shop {
+        width: 190px;
+        border: 2px solid rgb(216, 159, 12);
+        border-radius: 5px;
+        padding: 10px;
+        /* box-shadow: 0 0 5px rgba(0,0,0,0.3); */
+        box-shadow: 0px 0px 18px 15px rgba(21, 21, 21, 0.377);
+        margin: 15px;
+        margin-bottom: 25px;
+        transition: transform 0.2s ease-in-out; /* transición suave al hacer hover */
+
+        &:hover {
+            transform: scale(1.1); /* agranda la tarjeta al 110% */
+            box-shadow: 2px 2px 20px rgba(216, 158, 12, 0.6);
+            background-color: rgba(100, 148, 237, 0.183);
+        }
+
+        & img {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        & h3 {
+            font-size: 1.6em;
+            font-weight: 200;
+            margin: 10px 0;
+            color: whitesmoke;
+            text-align: center;
+            font-family: basketball;
+        }
+
+        & h4{
+            font-size: 1.0em;
+            color: #404040;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        & p {
+            font-size: 0.9em;
+            color: #404040;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        & span {
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+            // font-family: marker;
+            font-family: contacto;
+        }
+
+        & button {
+            display: block;
+            width: 100%;
+            background-color: #2c9e23;
+            color: #fff;
+            border: 1px solid rgb(216, 159, 12);
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover{
+                background-color: #57ab5c;
+            }
+        }
+    }
+       
+}
+

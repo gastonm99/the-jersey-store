@@ -1,0 +1,14 @@
+{
+  "name": "the-jersey-store-proyecto",
+  "version": "1.0.0",
+  "description": "Pagina especializada en la venta de camisetas **NBA**",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

@@ -1,0 +1,95 @@
+/* FOOTER */
+
+// MOBILE
+.container__footer{
+    min-width: 310px; 
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    background-color: #0f172a6b;
+    margin-top: 20px;
+    padding: 10px 20px;
+
+    &-contacto{
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 15px;
+        align-items: center;
+
+        &-a{
+            display: grid;
+            align-items: center;
+            padding-top: 10px;
+            color: black; 
+            justify-items: center;   
+            font-family: contacto;
+            text-decoration: none;
+            
+        }
+
+        &-img{
+            height: 43px;
+            width: 43px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// DESKTOP
+@media (min-width: $bpLarge){ 
+    .container__footer{
+        width: 100%;    
+        background-color: #0f172a6b;
+        margin-top: 20px;
+        padding: 10px 20px;         
+    }   
+
+    .container__footer-h1{
+        color: lightgray;
+        margin-left: 30px;
+        text-shadow: rgb(223, 213, 162) 1px 0 10px;
+    }
+
+    .container__footer p{
+        color: lightgray;
+        margin-left: 30px;
+        & a{
+            text-decoration: none;
+        }
+  }
+
+    .container__footer-contacto{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 15px;
+        align-items: center;
+        border-top: 1px solid rgb(255, 255, 255);
+        
+    }   
+    .container__footer-contacto-a{
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        color: black;    
+        text-decoration: none;
+        font-family: contacto;
+        font-size: smaller;
+        &:hover{
+            transform: scale(1.1);
+            color: black;
+        }
+    }   
+
+    .container__footer-contacto-img{
+        height: 43px;
+        width: 43px;
+        margin-right: 10px;
+    }
+} 

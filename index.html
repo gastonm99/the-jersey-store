@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Jersey Store</title>
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- simbolos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">        
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/2527948.png">
+
 
     
 </head>
@@ -46,37 +54,63 @@
     </header>
     <main>
         <section class="section-index">
-            <div class="cajon-index">
-                <p class="quienes-somos">
+            <div class="cajon-index justify-content-center">
+                <!-- <p class="quienes-somos">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente architecto libero sit atque ad doloremque placeat quibusdam assumenda totam dolorem debitis vel similique esse non molestiae id eius numquam!
                     Somos una tienda que se enfoca en la comercializacion de articulos originales de la NBA.
                     Todos nuestros productos son de alta calidad.
                     Además de nuestro catalogo online, contamos con nuestra <a href="./pages/contacto.html">tienda fisica.</a>
-                </p>
+                </p> -->
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/img/carousel-index/JamesWade-Miami.webp" class="d-block w-100 rounded-3 " alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/img/carousel-index/rodman.jpg" class="d-block w-100 rounded-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/img/carousel-index/lebron.jpg" class="d-block w-100 rounded-3" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
             <aricle class="container-mv"> 
                 <h2 class="h2-mv">Mas vendidos</h2>
                 <div class="container-mv__jerseys">
-                    <div class="container-mv__card">
+                    <div class="container-mv__jerseys-card">
                         <img src="./assets/img/Shop/phx blanca.png" alt="PHX Association">
                         <h3>Phoenix <br> Suns</h3>
                         <p>Association Edition</p>
                         <span>$99.99</span>
-                        <button>Agregar al carrito</button>
+                        <button class="w-100"><i class="bi bi-cart-plus"></i></button>
                     </div>
-                    <div class="container-mv__card">
+                    <div class="container-mv__jerseys-card">
                         <img src="./assets/img/Shop/lakers amarilla.png" alt="LAL Icon edition">
                         <h3>Los Angeles Lakers</h3>
                         <p>Icon Edition</p>
                         <span>$99.99</span>
-                        <button>Agregar al carrito</button>
+                        <button class="w-100"><i class="bi bi-cart-plus"></i></button>
                     </div>
-                    <div class="container-mv__card" class="card-h1-oneline">
+                    <div class="container-mv__jerseys-card" class="card-h1-oneline">
                         <img src="./assets/img/Shop/lakers blanca.png" alt="LAL">
                         <h3>Los Angeles Lakers</h3>
                         <p>Icon Edition</p>
                         <span>$99.99</span>
-                        <button>Agregar al carrito</button>
+                        <button class="w-100"><i class="bi bi-cart-plus"></i></button>
                     </div>
                 </div>
             </article>
@@ -85,8 +119,7 @@
     <footer>
         <section class="container__footer">
             <h1 class="container__footer-h1">Contactanos o vení a visitarnos</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates deleniti vel in provident rerum et asperiores recusandae. </p>
-            <div>
+            <p>Podes contactarnos por nuestras redes o encontrarnos en nuestra <a href="./pages/contacto.html">tienda fisica</a> </p>            <div>
                 <div class="container__footer-contacto" >
                     <a class="container__footer-contacto-a" href=""><img class="container__footer-contacto-img" src="./assets/img/whatsapp.webp" alt="wpp">+51 9 1135875412</a>
                     <a class="container__footer-contacto-a" href=""><img class="container__footer-contacto-img" src="./assets/img/instagram.png" alt="insta">@TheJerseyStore</a>
